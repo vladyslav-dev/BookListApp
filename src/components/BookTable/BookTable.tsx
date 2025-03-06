@@ -113,13 +113,14 @@ const BookTable = () => {
                 render: (row: Book) => {
                     const { id, status } = row
 
-                    const actionName = status === BookStatus.ACTIVE ? 'Deactivate' : 'Re-Activate'
-                    const action = status === BookStatus.ACTIVE ? onBookDeactivate : onBookReactivate
+                    const isActive = status === BookStatus.ACTIVE
+                    const actionName = isActive ? 'Deactivate' : 'Re-Activate'
+                    const action = isActive ? onBookDeactivate : onBookReactivate
 
                     return (
                         <div className='flex space-x-8'>
                             <Button variant='link' onClick={() => onBookEdit(id)}>Edit</Button>
-                            <Button variant='link' onClick={() => onBookDelete(id)}>Delete</Button>
+                            <Button variant='link' onClick={() => onBookDelete(id)} disabled={isActive}>Delete</Button>
                             <Button variant='link' onClick={() => action(id)}>{actionName}</Button>
                         </div>
                     )
