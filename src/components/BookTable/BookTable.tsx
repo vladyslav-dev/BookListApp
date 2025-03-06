@@ -1,4 +1,4 @@
-import Filter  from './BookTableFilter'
+import Filter  from './parts/Filter'
 import Button from '../ui/Button'
 import Table from '../ui/Table'
 import { useNavigate } from 'react-router-dom'
@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react'
 import { Book, BookFilterOptions, BookStatus, TableColumnsEnum } from '@/types/books'
 import { deactivateBook, deleteBook, getAllBooks, getBooksByStatus, reactivateBook } from '@/services/books'
 import { formatDate } from '@/types/date'
+import NumberOfRecords from './parts/NumberOfRecords'
 
 const BookTable = () => {
     const navigate = useNavigate();
@@ -133,10 +134,15 @@ const BookTable = () => {
         navigate('/book-form')
     }
 
+    const getNumberOfRecords = () => {
+        return books.length || 0
+    }
+
     return (
         <div>
             <Filter activeFilter={activeFilter} handleFilterChange={handleFilterChange} />
             <Button onClick={onAddBookClick}>Add book</Button>
+            <NumberOfRecords records={getNumberOfRecords()} />
             <Table {...getTableConfig()} />
         </div>
     )

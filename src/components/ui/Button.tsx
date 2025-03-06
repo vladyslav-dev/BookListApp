@@ -16,7 +16,7 @@ const Button: FC<PropsWithChildren<ButtonProps>> = ({ children, variant = 'prima
   const buttonStyles = `${baseStyles} ${variantStyles[variant]}`;
 
   return (
-    <button className={buttonStyles} {...props}>{children}</button>
+    <button className={`${buttonStyles} ${props.className}`} {...props}>{children}</button>
   )
 }
 

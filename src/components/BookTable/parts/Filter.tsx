@@ -1,14 +1,14 @@
 import { FC } from 'react'
-import Dropdown from '../ui/Dropdown'
+import Dropdown from '../../ui/Dropdown'
 import { BookFilterOptions } from '@/types/books'
 
 
-interface BookTableFilterProps {
+interface FilterProps {
     activeFilter: string
     handleFilterChange: (filter: BookFilterOptions) => void
 }
 
-const BookTableFilter: FC<BookTableFilterProps> = ({
+const Filter: FC<FilterProps> = ({
     activeFilter,
     handleFilterChange
 }) => {
@@ -24,4 +24,4 @@ const BookTableFilter: FC<BookTableFilterProps> = ({
     )
 }
 
-export default BookTableFilter
+export default Filter
