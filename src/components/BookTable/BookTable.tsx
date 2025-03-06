@@ -117,9 +117,9 @@ const BookTable = () => {
 
                     return (
                         <div className='flex space-x-8'>
-                            <button onClick={() => onBookEdit(id)}>Edit</button>
-                            <button onClick={() => onBookDelete(id)}>Delete</button>
-                            <button onClick={() => action(id)}>{actionName}</button>
+                            <Button variant='link' onClick={() => onBookEdit(id)}>Edit</Button>
+                            <Button variant='link' onClick={() => onBookDelete(id)}>Delete</Button>
+                            <Button variant='link' onClick={() => action(id)}>{actionName}</Button>
                         </div>
                     )
                 },
