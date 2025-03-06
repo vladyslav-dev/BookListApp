@@ -1,7 +1,7 @@
 import Table from '@/components/Table'
-import React from 'react'
 
 const Dashboard = () => {
+  
 
   const config = {
     data: [
@@ -50,7 +50,10 @@ const Dashboard = () => {
 }
 
   return (
-    <Table data={config.data} columns={config.columns} />
+    <div>
+       <Table data={config.data} columns={config.columns} />
+    </div>
+    
   )
 }
 

@@ -11,4 +11,9 @@ export default defineConfig({
     tsconfigPaths(),
     tailwindcss(),
   ],
+  // server: {
+  //   watch: {
+  //     ignored: ['**/db.json']
+  //   }
+  // }
 })
