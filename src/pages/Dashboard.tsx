@@ -1,7 +1,10 @@
+import Button from '@/components/Button'
 import Filter from '@/components/Filter'
 import Table from '@/components/Table'
+import { useNavigate } from 'react-router-dom'
 
 const Dashboard = () => {
+    const navigate = useNavigate();
   
 
   const config = {
@@ -49,10 +52,14 @@ const Dashboard = () => {
         },
     ]
 }
+    const onAddBookClick = () => {
+        navigate('/book-form')
+    }
 
   return (
     <div>
         <Filter />
+        <Button onClick={onAddBookClick}>Add book</Button>
        <Table data={config.data} columns={config.columns} />
     </div>
     

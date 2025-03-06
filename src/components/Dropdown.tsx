@@ -7,6 +7,7 @@ import {
     useState,
     FC
 } from 'react'
+import Button from './Button'
 
 interface DropdownContextType {
     isOpen: boolean
@@ -44,7 +45,7 @@ const Dropdown: DropdownComponent = ({ children }) => {
 const DropdownButton: FC<PropsWithChildren<{}>> = ({ children }) => {
     const { toggle } = useContext(DropdownContext)!
 
-    return <button onClick={toggle} className='px-4 py-2 bg-blue-500 text-white rounded cursor-pointer'>{children}</button>
+    return <Button onClick={toggle}>{children}</Button>
 }
 
 const DropdownMenu: FC<PropsWithChildren<{}>> = ({ children }) => {
