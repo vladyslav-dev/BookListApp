@@ -3,6 +3,22 @@ export enum BookStatus {
     DEACTIVATED = 'Deactivated',
 }
 
+export enum BookFilterOptions {
+    ALL = 'All',
+    ACTIVE = 'Active',
+    DEACTIVATED = 'Deactivated'
+}
+
+export enum TableColumnsEnum {
+    TITLE = 'Title',
+    AUTHOR = 'Author',
+    CATEGORY = 'Category',
+    ISBN = 'ISBN',
+    CREATED_AT = 'Created at',
+    MODIFIED_AT = 'Modified at',
+    ACTION = 'Action'
+}
+
 export interface Book {
     id: string
     title: string
@@ -53,3 +69,5 @@ export type TServiceUpdateBookStatus = (id: string, bookStatus: BookStatus) => P
 export type TServiceDeactivateBook = (id: string) => Promise<Book>
 
 export type TServiceReactivateBook = (id: string) => Promise<Book>
+
+export type TServiceDeleteBook = (id: string) => Promise<void>

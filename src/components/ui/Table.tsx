@@ -3,7 +3,7 @@ import React from 'react'
 interface TableColumn {
     name: string;
     label: string;
-    render?: (row: string) => React.ReactNode;
+    render?: (row: any) => React.ReactNode;
 }
 
 interface TableProps {

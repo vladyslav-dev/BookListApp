@@ -5,6 +5,7 @@ import {
     BookStatus, 
     TServiceCreateBook, 
     TServiceDeactivateBook, 
+    TServiceDeleteBook, 
     TServiceEditeBook, 
     TServiceGetAllBooks, 
     TServiceGetBookById, 
@@ -55,4 +56,8 @@ export const deactivateBook: TServiceDeactivateBook = async (id) => {
 
 export const reactivateBook: TServiceReactivateBook = async (id) => {
     return api.updateBookStatus(id, { status: BookStatus.ACTIVE })
+}
+
+export const deleteBook: TServiceDeleteBook = async (id) => {
+    return api.deleteBook(id)
 }

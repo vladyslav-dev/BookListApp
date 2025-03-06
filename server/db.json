@@ -8,7 +8,7 @@
       "isbn": "9780743273565",
       "createdAt": "2022-03-12T08:35:00Z",
       "modifiedAt": "2022-03-13T13:48:00Z",
-      "status": "ACTIVE"
+      "status": "Active"
     },
     {
       "id": "93acb56f-5b33-46a5-b0b1-c4e4a62f7a31",
@@ -18,7 +18,7 @@
       "isbn": "9780061120084",
       "createdAt": "2022-01-15T10:22:00Z",
       "modifiedAt": "2022-02-01T09:14:00Z",
-      "status": "DEACTIVATED"
+      "status": "Deactivated"
     },
     {
       "id": "d672d735-45f4-4292-a4d5-cabb5904600d",
@@ -28,7 +28,7 @@
       "isbn": "9780451524935",
       "createdAt": "2022-05-20T14:12:00Z",
       "modifiedAt": "--",
-      "status": "ACTIVE"
+      "status": "Active"
     },
     {
       "id": "b1c299e3-72b9-48be-b08e-8c2d5a0366a2",
@@ -38,7 +38,7 @@
       "isbn": "9780141040349",
       "createdAt": "2022-07-10T17:05:00Z",
       "modifiedAt": "2022-07-11T12:30:00Z",
-      "status": "ACTIVE"
+      "status": "Active"
     },
     {
       "id": "8321adf9-dbbf-4237-8a71-bfc10493b6b0",
@@ -48,7 +48,7 @@
       "isbn": "9781851244422",
       "createdAt": "2022-03-10T09:00:00Z",
       "modifiedAt": "--",
-      "status": "DEACTIVATED"
+      "status": "Deactivated"
     },
     {
       "id": "18f7178c-5f1e-4b62-b64e-b9b3a07c7038",
@@ -58,7 +58,7 @@
       "isbn": "9780316769488",
       "createdAt": "2022-04-01T12:45:00Z",
       "modifiedAt": "--",
-      "status": "ACTIVE"
+      "status": "Active"
     },
     {
       "id": "a7739022-1d42-46f9-b1d4-576b42e0e15d",
@@ -68,7 +68,7 @@
       "isbn": "9780060850524",
       "createdAt": "2022-06-15T11:10:00Z",
       "modifiedAt": "2022-06-17T14:20:00Z",
-      "status": "ACTIVE"
+      "status": "Active"
     },
     {
       "id": "d9baf5a9-7b56-4e5d-bd9c-5ff8c0e4f9a2",
@@ -78,7 +78,7 @@
       "isbn": "9780261102217",
       "createdAt": "2022-03-05T16:30:00Z",
       "modifiedAt": "--",
-      "status": "ACTIVE"
+      "status": "Active"
     },
     {
       "id": "fb7c16d4-bb5d-4fa0-9b47-e89b191f65d1",
@@ -88,7 +88,7 @@
       "isbn": "9780199232765",
       "createdAt": "2022-08-12T13:55:00Z",
       "modifiedAt": "2022-08-13T09:05:00Z",
-      "status": "ACTIVE"
+      "status": "Active"
     },
     {
       "id": "2345b169-b3c6-42c5-b120-4dcb61ed89e6",
@@ -98,7 +98,7 @@
       "isbn": "9780140449112",
       "createdAt": "2022-04-10T07:50:00Z",
       "modifiedAt": "--",
-      "status": "DEACTIVATED"
+      "status": "Deactivated"
     }
   ]
 }
