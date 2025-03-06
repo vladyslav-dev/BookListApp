@@ -1,6 +1,6 @@
 export enum BookStatus {
-    ACTIVE = 'ACTIVE',
-    DEACTIVATED = 'DEACTIVATED',
+    ACTIVE = 'Active',
+    DEACTIVATED = 'Deactivated',
 }
 
 export interface Book {

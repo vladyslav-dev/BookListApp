@@ -1,3 +1,4 @@
+import Filter from '@/components/Filter'
 import Table from '@/components/Table'
 
 const Dashboard = () => {
@@ -51,6 +52,7 @@ const Dashboard = () => {
 
   return (
     <div>
+        <Filter />
        <Table data={config.data} columns={config.columns} />
     </div>
     
