@@ -16,7 +16,7 @@ interface ITableData {
 const useTableData = (): ITableData => {
     const navigate = useNavigate();
     const [books, setBooks] = useState<Book[]>([])
-    const [activeFilter, setActiveFilter] = useState<BookFilterOptions>(BookFilterOptions.ALL)
+    const [activeFilter, setActiveFilter] = useState<BookFilterOptions>(BookFilterOptions.ACTIVE)
 
     useEffect(() => {
         fetchBooks(activeFilter)
