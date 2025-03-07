@@ -6,13 +6,13 @@ This project is a web application built with Vite and JSON Server. It allows use
 ## Prerequisites
 Make sure you have the following installed on your machine:
 - **Node.js** (>= 20)
-- **npm** (comes with Node.js)
+- **npm**
 
 ## Installation
 1. **Clone the repository:**
    ```sh
-   git clone <repository-url>
-   cd <project-directory>
+   git clone https://github.com/vladyslav-dev/BookListApp.git
+   cd BookListApp
    ```
 2. **Install dependencies:**
    ```sh
