@@ -1,8 +1,8 @@
-import Filter  from './parts/Filter'
-import Button from '../ui/Button'
-import Table from '../ui/Table'
 import { useNavigate } from 'react-router-dom'
-import NumberOfRecords from './parts/NumberOfRecords'
+import Filter  from '@/components/BookTable/parts/Filter'
+import Button from '@/components/ui/Button'
+import Table from '@/components/ui/Table'
+import NumberOfRecords from '@/components/BookTable/parts/NumberOfRecords'
 import useTableData from '@/hooks/useTableData'
 
 const BookTable = () => {

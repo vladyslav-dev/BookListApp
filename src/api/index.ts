@@ -1,9 +1,9 @@
-const API_BASE_URL = "http://localhost:8080"
+const API_BASE_URL = 'http://localhost:8080'
 
 const api = async (endpoint: string, options: RequestInit = {}) => {
     const response = await fetch(`${API_BASE_URL}${endpoint}`, {
         headers: {
-            "Content-Type": "application/json",
+            'Content-Type': 'application/json',
             ...options.headers,
         },
         ...options,

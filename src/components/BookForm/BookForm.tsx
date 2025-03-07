@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { getBookById } from '@/services/books';
 import { Book } from '@/types/books';
-import Form from './parts/Form';
+import Form from '@/components/BookForm/parts/Form';
 
 const BookForm = () => {
     const [book, setBook] = useState<Book | null>(null)

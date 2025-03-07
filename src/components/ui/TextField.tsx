@@ -14,9 +14,9 @@ const TextField: FC<PropsWithChildren<TextFieldProps>> = ({
     ...props 
 }) => {
     return (
-        <div className="mb-4">
+        <div className='mb-4'>
             {label && (
-                <label htmlFor={props.id} className="block text-sm font-medium text-gray-700">
+                <label htmlFor={props.id} className='block text-sm font-medium text-gray-700'>
                     {label}
                 </label>
             )}
@@ -28,7 +28,7 @@ const TextField: FC<PropsWithChildren<TextFieldProps>> = ({
                 className || ''
                 }`}
             />
-            {error && <p className="mt-1 text-sm text-red-500">{error}</p>}
+            {error && <p className='mt-1 text-sm text-red-500'>{error}</p>}
             {children}
         </div>
     );

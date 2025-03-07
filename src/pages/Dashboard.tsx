@@ -5,7 +5,7 @@ const Dashboard = () => {
 
   return (
     <>
-        <Heading text="Dashboard" />
+        <Heading text='Dashboard' />
         <BookTable />
     </>
     

@@ -1,4 +1,4 @@
-import api from "@/api"
+import api from '@/api'
 import { 
     TApiCreateBook, 
     TApiDeleteBook, 
@@ -6,7 +6,7 @@ import {
     TApiGetBooks, 
     TApiUpdateBook, 
     TApiUpdateBookStatus 
-} from "@/types/books"
+} from '@/types/books'
 
 export const getBooks: TApiGetBooks = async (status) => {
     const url = status ? `/books?status=${status}` : `/books`
@@ -19,27 +19,27 @@ export const getBookById: TApiGetBookById = async (id) => {
 
 export const createBook: TApiCreateBook = async (book) => {
     return api(`/books`, {
-        method: "POST",
+        method: 'POST',
         body: JSON.stringify(book),
     })
 }
 
 export const updateBook: TApiUpdateBook = async (id, book) => {
     return api(`/books/${id}`, {
-        method: "PUT",
+        method: 'PUT',
         body: JSON.stringify(book),
     })
 }
 
 export const updateBookStatus: TApiUpdateBookStatus = async (id, payload) => {
     return api(`/books/${id}`, {
-        method: "PATCH",
+        method: 'PATCH',
         body: JSON.stringify(payload),
     })
 }
 
 export const deleteBook: TApiDeleteBook = async (id) => {
     return api(`/books/${id}`, {
-        method: "DELETE",
+        method: 'DELETE',
     })
 }

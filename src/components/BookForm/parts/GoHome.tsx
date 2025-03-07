@@ -9,7 +9,7 @@ const GoHome = () => {
     }
         
     return (
-        <Button variant="link" onClick={handleGoHome}>
+        <Button variant='link' onClick={handleGoHome}>
             ← Go Home
         </Button>
     )

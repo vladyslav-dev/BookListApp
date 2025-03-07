@@ -7,7 +7,7 @@ import {
     useState,
     FC
 } from 'react'
-import Button from './Button'
+import Button from '@/components/ui/Button'
 
 interface DropdownContextType {
     isOpen: boolean
@@ -17,7 +17,7 @@ interface DropdownContextType {
 
 const DropdownContext = createContext<DropdownContextType | null>(null)
 
-interface DropdownProps extends ComponentPropsWithoutRef<"div"> {}
+interface DropdownProps extends ComponentPropsWithoutRef<'div'> {}
 
 interface DropdownComponent extends FC<DropdownProps> {
     Button: typeof DropdownButton;

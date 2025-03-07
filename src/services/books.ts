@@ -1,5 +1,5 @@
-import * as api from "@/api/books"
-import { generateBookId } from "@/utils/common"
+import * as api from '@/api/books'
+import { generateBookId } from '@/utils/common'
 import {
     Book, 
     BookStatus, 
@@ -12,7 +12,7 @@ import {
     TServiceGetBooksByStatus, 
     TServiceReactivateBook, 
     TServiceUpdateBookStatus 
-} from "@/types/books"
+} from '@/types/books'
 
 export const getAllBooks: TServiceGetAllBooks = async () => {
     return api.getBooks()
@@ -31,7 +31,7 @@ export const createBook: TServiceCreateBook = async (bookForm) => {
         id: generateBookId(),
         ...bookForm,
         createdAt: new Date().toISOString(),
-        modifiedAt: "--",
+        modifiedAt: '--',
         status: BookStatus.ACTIVE,
     }
     return api.createBook(newBook)

@@ -6,7 +6,7 @@ const BookFormPage = () => {
   return (
     <>
       <div className='flex justify-between items-center mb-6'>
-        <Heading text="Book Form" />
+        <Heading text='Book Form' />
         <GoHome />
       </div>
       <BookForm />

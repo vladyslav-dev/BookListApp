@@ -41,7 +41,7 @@ export const ToastProvider: FC<PropsWithChildren> = ({ children }) => {
   return (
     <ToastContext.Provider value={{ showToast }}>
       {children}
-      <div className="fixed bottom-4 right-4 z-50">
+      <div className='fixed bottom-4 right-4 z-50'>
         {toasts.map((toast) => (
           <Toast key={toast.id} message={toast.message} type={toast.type} onClose={() => removeToast(toast.id)} />
         ))}
@@ -65,7 +65,7 @@ const Toast: React.FC<ToastProps> = ({ message, type, onClose }) => {
     return createPortal(
         <div className={`fixed top-4 right-4 p-4 rounded-md text-white ${bgColor} shadow-lg animate-toast`}>
           {message}
-          <div className="absolute bottom-0 left-0 h-1 bg-white/50 w-full rounded-b-md overflow-hidden">
+          <div className='absolute bottom-0 left-0 h-1 bg-white/50 w-full rounded-b-md overflow-hidden'>
             <div className={`h-full ${progressColor} animate-progress`}></div>
           </div>
         </div>,

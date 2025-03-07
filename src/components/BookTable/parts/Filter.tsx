@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import Dropdown from '../../ui/Dropdown'
+import Dropdown from '@/components/ui/Dropdown'
 import { BookFilterOptions } from '@/types/books'
 
 

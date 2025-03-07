@@ -131,26 +131,26 @@ const Form: FC<FormProps> = ({
         <div className={`${preventClick ? 'absolute h-full w-full top-0 left-0 z-50 pointer-events-none opacity-20 bg-white-200' : ''}`}>
             <form action={submitAction}>
                 <TextField 
-                    name="title" 
-                    label="Title" 
+                    name='title' 
+                    label='Title' 
                     defaultValue={state.title} 
                     error={state.errors?.title} 
                 />
                 <TextField 
-                    name="author" 
-                    label="Author" 
+                    name='author' 
+                    label='Author' 
                     defaultValue={state.author} 
                     error={state.errors?.author} 
                 />
                 <Select 
-                    name="category" 
-                    label="Category" 
+                    name='category' 
+                    label='Category' 
                     defaultValue={state.category} 
                     options={dummyCategories} error={state.errors?.category} 
                 />
                 <TextField 
-                    name="isbn" 
-                    label="ISBN" 
+                    name='isbn' 
+                    label='ISBN' 
                     defaultValue={state.isbn} 
                     error={state.errors?.isbn} 
                 />
