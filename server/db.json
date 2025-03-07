@@ -17,7 +17,7 @@
       "category": "Fiction",
       "isbn": "9780061120084",
       "createdAt": "2022-01-15T10:22:00Z",
-      "modifiedAt": "2022-02-01T09:14:00Z",
+      "modifiedAt": "--",
       "status": "Deactivated"
     },
     {
@@ -58,7 +58,7 @@
       "isbn": "9780316769488",
       "createdAt": "2022-04-01T12:45:00Z",
       "modifiedAt": "--",
-      "status": "Deactivated"
+      "status": "Active"
     },
     {
       "id": "a7739022-1d42-46f9-b1d4-576b42e0e15d",
@@ -101,132 +101,102 @@
       "status": "Deactivated"
     },
     {
-      "id": "e82b2cb7-ed44-4546-b8e6-69a5c1b62560",
-      "title": "sdaffads",
-      "author": "sadfsadf",
-      "category": "asdffsdafdsa",
-      "isbn": "1223413433",
-      "createdAt": "2025-03-06T23:23:43.451Z",
+      "id": "f47ac10b-58cc-4372-a567-0e02b2c3d480",
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "category": "Fiction",
+      "isbn": "9780061120085",
+      "createdAt": "2022-09-01T10:00:00Z",
+      "modifiedAt": "2022-09-02T11:00:00Z",
+      "status": "Active"
+    },
+    {
+      "id": "93acb56f-5b33-46a5-b0b1-c4e4a62f7a32",
+      "title": "The Da Vinci Code",
+      "author": "Dan Brown",
+      "category": "Thriller",
+      "isbn": "9780307474278",
+      "createdAt": "2022-10-15T12:00:00Z",
       "modifiedAt": "--",
       "status": "Active"
     },
     {
-      "id": "4022f899-5f95-463c-9bfa-d3c24e3778be",
-      "title": "sadffdsafds",
-      "author": "dsfsdf",
+      "id": "d672d735-45f4-4292-a4d5-cabb5904600e",
+      "title": "The Shining",
+      "author": "Stephen King",
+      "category": "Horror",
+      "isbn": "9780307743657",
+      "createdAt": "2022-11-20T14:00:00Z",
+      "modifiedAt": "--",
+      "status": "Active"
+    },
+    {
+      "id": "b1c299e3-72b9-48be-b08e-8c2d5a0366a3",
+      "title": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "category": "Fantasy",
+      "isbn": "9780544003415",
+      "createdAt": "2022-12-10T16:00:00Z",
+      "modifiedAt": "2022-12-11T17:00:00Z",
+      "status": "Active"
+    },
+    {
+      "id": "8321adf9-dbbf-4237-8a71-bfc10493b6b1",
+      "title": "The Hitchhiker's Guide to the Galaxy",
+      "author": "Douglas Adams",
+      "category": "Science Fiction",
+      "isbn": "9780345391803",
+      "createdAt": "2023-01-05T18:00:00Z",
+      "modifiedAt": "--",
+      "status": "Deactivated"
+    },
+    {
+      "id": "18f7178c-5f1e-4b62-b64e-b9b3a07c7039",
+      "title": "The Girl with the Dragon Tattoo",
+      "author": "Stieg Larsson",
+      "category": "Thriller",
+      "isbn": "9780307269751",
+      "createdAt": "2023-02-01T20:00:00Z",
+      "modifiedAt": "--",
+      "status": "Active"
+    },
+    {
+      "id": "a7739022-1d42-46f9-b1d4-576b42e0e15e",
+      "title": "The Hunger Games",
+      "author": "Suzanne Collins",
       "category": "Dystopian",
-      "isbn": "1223413433",
-      "createdAt": "2025-03-06T23:24:19.944Z",
+      "isbn": "9780439023481",
+      "createdAt": "2023-03-15T22:00:00Z",
+      "modifiedAt": "2023-03-16T23:00:00Z",
+      "status": "Active"
+    },
+    {
+      "id": "d9baf5a9-7b56-4e5d-bd9c-5ff8c0e4f9a3",
+      "title": "The Road",
+      "author": "Cormac McCarthy",
+      "category": "Post-Apocalyptic",
+      "isbn": "9780307387899",
+      "createdAt": "2023-04-10T00:00:00Z",
       "modifiedAt": "--",
+      "status": "Deactivated"
+    },
+    {
+      "id": "fb7c16d4-bb5d-4fa0-9b47-e89b191f65d2",
+      "title": "The Book Thief",
+      "author": "Markus Zusak",
+      "category": "Historical",
+      "isbn": "9780375842207",
+      "createdAt": "2023-05-12T02:00:00Z",
+      "modifiedAt": "2023-05-13T03:00:00Z",
       "status": "Active"
     },
     {
-      "id": "d0689d41-9d67-450a-bb92-06d596601dd9",
-      "title": "sadffsda",
-      "author": "fasdsdfa",
-      "category": "Dystopian",
-      "isbn": "1223413433",
-      "createdAt": "2025-03-06T23:29:11.333Z",
-      "modifiedAt": "--",
-      "status": "Active"
-    },
-    {
-      "id": "b9c70e29-e6a2-4e73-8ab2-c293d52855ba",
-      "title": "dffd",
-      "author": "dsf",
-      "category": "dsf",
-      "isbn": "1223413433",
-      "createdAt": "2025-03-06T23:31:15.117Z",
-      "modifiedAt": "--",
-      "status": "Active"
-    },
-    {
-      "id": "1b06de5f-6dc9-4cd7-9197-d6a2772445d4",
-      "title": "sdaffsad",
-      "author": "fsdadsf",
-      "category": "Dystopian",
-      "isbn": "1223413433",
-      "createdAt": "2025-03-06T23:50:44.025Z",
-      "modifiedAt": "--",
-      "status": "Active"
-    },
-    {
-      "id": "87c97cb1-c038-426f-a22a-4db2b2c55e4b",
-      "title": "sdaffds",
-      "author": "dfsadfsa",
-      "category": "Dystopian",
-      "isbn": "1223413433",
-      "createdAt": "2025-03-06T23:51:05.513Z",
-      "modifiedAt": "--",
-      "status": "Active"
-    },
-    {
-      "id": "950573a9-6f5c-46af-9e41-19c358ca1fc0",
-      "title": "sdfafdsa",
-      "author": "fdsasfda",
-      "category": "Dystopian",
-      "isbn": "1223413433",
-      "createdAt": "2025-03-06T23:54:10.543Z",
-      "modifiedAt": "--",
-      "status": "Active"
-    },
-    {
-      "id": "73ffea00-39ad-4ba2-8fa3-e2fa6b578776",
-      "title": "sdafsdfa",
-      "author": "author3124",
-      "category": "dsfdsfd",
-      "isbn": "1223413433",
-      "createdAt": "2025-03-06T23:56:39.385Z",
-      "modifiedAt": "--",
-      "status": "Active"
-    },
-    {
-      "id": "c575c106-722a-4b61-ab4c-dc27ccd1487c",
-      "title": "sdfadfs",
-      "author": "dsfdfs",
-      "category": "Adventure",
-      "isbn": "1223413433",
-      "createdAt": "2025-03-06T23:56:50.527Z",
-      "modifiedAt": "--",
-      "status": "Active"
-    },
-    {
-      "id": "9f19d2e5-bb7d-431f-a819-a84e844bb0ba",
-      "title": "dsffd222ddd",
-      "author": "dsf1111",
-      "category": "sdfdsf",
-      "isbn": "1223413433",
-      "createdAt": "2025-03-06T23:57:33.164Z",
-      "modifiedAt": "2025-03-07T00:48:54.222Z",
-      "status": "Active"
-    },
-    {
-      "id": "03a88d14-d8a4-406f-896c-749aefe818ba",
-      "title": "test1",
-      "author": "test2",
-      "category": "Romance",
-      "isbn": "1223413433",
-      "createdAt": "2025-03-07T01:15:27.026Z",
-      "modifiedAt": "--",
-      "status": "Active"
-    },
-    {
-      "id": "f6e2d133-8e19-4fcf-892d-9db8b33416f6",
-      "title": "tes123123",
-      "author": "dsf",
-      "category": "Dystopian",
-      "isbn": "12234134333",
-      "createdAt": "2025-03-07T01:16:05.850Z",
-      "modifiedAt": "--",
-      "status": "Active"
-    },
-    {
-      "id": "72b19871-11b5-42ef-9a21-4076e529e0d0",
-      "title": "sdfafsda",
-      "author": "21321",
-      "category": "Romance",
-      "isbn": "1223413433",
-      "createdAt": "2025-03-07T01:16:56.962Z",
+      "id": "2345b169-b3c6-42c5-b120-4dcb61ed89e7",
+      "title": "The Kite Runner",
+      "author": "Khaled Hosseini",
+      "category": "Drama",
+      "isbn": "9781594631931",
+      "createdAt": "2023-06-15T04:00:00Z",
       "modifiedAt": "--",
       "status": "Active"
     }
