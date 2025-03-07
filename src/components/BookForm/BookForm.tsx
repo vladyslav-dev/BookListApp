@@ -37,8 +37,8 @@ const BookForm = () => {
     }
 
     return (
-        <div>
-            <h2 className='text-xl mb-4'>{id ? 'Edit existing' : 'Add new'} book</h2>
+        <div className='p-4 pt-0 max-w-[420px]'>
+            <h2 className='text-2xl pb-4'>{id ? 'Edit book' : 'Add book'}</h2>
             <Form
                 {...(id ? { initialState: getInitialState() } : {})}
                 {...(book ? { book } : {})}

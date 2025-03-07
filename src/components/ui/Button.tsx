@@ -13,7 +13,7 @@ const Button: FC<PropsWithChildren<ButtonProps>> = ({
   ...props 
 }) => {
 
-  const baseStyles = 'inline-block px-4 py-2 rounded';
+  const baseStyles = 'inline-block px-4 py-2 rounded text-nowrap';
 
   const variantStyles = {
     primary: 'bg-blue-500 text-white hover:bg-blue-600',

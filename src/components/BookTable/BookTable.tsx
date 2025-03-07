@@ -18,11 +18,18 @@ const BookTable = () => {
     }
 
     return (
-        <div>
-            <Filter activeFilter={activeFilter} handleFilterChange={handleFilterChange} />
-            <Button onClick={onAddBookClick}>Add book</Button>
-            <NumberOfRecords records={getNumberOfRecords()} />
-            <Table {...getTableConfig()} />
+        <div className='h-full flex flex-col max-h-[80vh] overflow-auto relative'>
+            <div className='flex justify-between items-center px-4 sticky top-0 bg-white z-10'>
+                <div className='flex items-center space-x-4'>
+                    <Filter activeFilter={activeFilter} handleFilterChange={handleFilterChange} />
+                    <Button onClick={onAddBookClick}>Add book</Button>
+                </div>
+                <NumberOfRecords records={getNumberOfRecords()} />
+            </div>
+            
+            <div className='p-4'>
+                <Table {...getTableConfig()} />
+            </div>
         </div>
     )
 }

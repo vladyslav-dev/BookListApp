@@ -5,7 +5,7 @@ interface NumberOfRecordsProps {
 }
 
 const NumberOfRecords: FC<NumberOfRecordsProps> = ({ records }) => (
-    <span className='bg-gray-100 p-2 text-sm'>Total records: {records}</span>
+    <span className='p-2 text-sm'>Total records: {records}</span>
 )
 
 export default NumberOfRecords
