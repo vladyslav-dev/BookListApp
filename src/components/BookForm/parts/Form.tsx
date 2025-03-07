@@ -128,7 +128,7 @@ const Form: FC<FormProps> = ({
     }
 
     return (
-        <div className={`${preventClick ? 'absolute h-full w-full top-0 left-0 z-50 pointer-events-none opacity-20 bg-white-200' : ''}`}>
+        <>
             <form action={submitAction}>
                 <TextField 
                     name='title' 
@@ -156,7 +156,8 @@ const Form: FC<FormProps> = ({
                 />
                 <Button type='submit'>Submit</Button>
             </form>
-        </div>
+            <div className={`${preventClick ? 'absolute inset-0 z-50 bg-black opacity-40 pointer-events-auto' : ''}`}></div>
+        </>
     )
 }
 

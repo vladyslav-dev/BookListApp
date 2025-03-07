@@ -63,7 +63,7 @@ const Toast: React.FC<ToastProps> = ({ message, type, onClose }) => {
     const progressColor = type === 'success' ? 'bg-green-300' : 'bg-red-300';
   
     return createPortal(
-        <div className={`fixed top-4 right-4 p-4 rounded-md text-white ${bgColor} shadow-lg animate-toast`}>
+        <div className={`fixed top-4 right-4 p-4 z-100 rounded-md text-white ${bgColor} shadow-lg animate-toast`}>
           {message}
           <div className='absolute bottom-0 left-0 h-1 bg-white/50 w-full rounded-b-md overflow-hidden'>
             <div className={`h-full ${progressColor} animate-progress`}></div>
