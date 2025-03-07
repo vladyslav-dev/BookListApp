@@ -30,8 +30,7 @@ export interface Book {
     status: BookStatus
 }
 
-// BookForm represents only the fields relevant to creating/editing a book
-export interface BookForm extends Omit<Book, 'id' | 'createdAt' | 'modifiedAt' | 'status'> {}
+export interface BookFormData extends Omit<Book, 'id' | 'createdAt' | 'modifiedAt' | 'status'> {}
 
 export interface BookList {
     books: Book[]
@@ -58,11 +57,11 @@ export type TServiceGetAllBooks = () => Promise<Book[]>
 
 export type TServiceGetBooksByStatus = (status: BookStatus) => Promise<Book[]>
 
-export type TServiceCreateBook = (bookForm: BookForm) => Promise<Book> 
+export type TServiceCreateBook = (bookForm: BookFormData) => Promise<Book> 
 
 export type TServiceGetBookById = (id: string) => Promise<Book>
 
-export type TServiceEditeBook = (id: string, book: Book) => Promise<Book>
+export type TServiceEditeBook = (book: Book) => Promise<Book>
 
 export type TServiceUpdateBookStatus = (id: string, bookStatus: BookStatus) => Promise<Book>
 

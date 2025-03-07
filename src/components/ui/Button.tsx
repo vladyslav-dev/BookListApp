@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes, FC, PropsWithChildren } from 'react'
+import { ButtonHTMLAttributes, FC, MouseEvent, PropsWithChildren } from 'react'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'link';
@@ -9,6 +9,7 @@ const Button: FC<PropsWithChildren<ButtonProps>> = ({
   children, 
   variant = 'primary', 
   disabled = false,
+  onClick,
   ...props 
 }) => {
 
@@ -25,8 +26,19 @@ const Button: FC<PropsWithChildren<ButtonProps>> = ({
 
   const buttonStyles = `${baseStyles} ${variantStyles[variant]}`;
 
+  const handleClick = (e: MouseEvent<HTMLButtonElement>) => {
+    if (disabled) {
+      e.preventDefault();
+      return;
+    }
+
+    if (onClick) {
+      onClick(e);
+    }
+  };
+
   return (
-    <button className={`${disabledStyles} ${buttonStyles} ${props.className ?? ''}`} {...props}>{children}</button>
+    <button className={`${disabledStyles} ${buttonStyles}`} onClick={handleClick} {...props}>{children}</button>
   )
 }
 

@@ -37,13 +37,12 @@ export const createBook: TServiceCreateBook = async (bookForm) => {
     return api.createBook(newBook)
 }
 
-export const editBook: TServiceEditeBook = async (id, book) => {
+export const editBook: TServiceEditeBook = async (book) => {
     const updatedBook: Book = {
         ...book,
-        id,
         modifiedAt: new Date().toISOString(),
     }
-    return api.updateBook(id, updatedBook)
+    return api.updateBook(book.id, updatedBook)
 }
 
 export const updateBookStatus: TServiceUpdateBookStatus = async (id, bookStatus) => {

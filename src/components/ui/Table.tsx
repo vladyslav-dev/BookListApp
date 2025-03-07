@@ -7,7 +7,7 @@ interface TableColumn {
 }
 
 interface TableProps {
-    data: Record<string, string>[];
+    data: Record<string, any>[];
     columns: TableColumn[]
 }
 
