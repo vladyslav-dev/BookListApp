@@ -8,7 +8,6 @@ const BookForm = () => {
     const [book, setBook] = useState<Book | null>(null)
     const [searchParams] = useSearchParams();
     const id = searchParams.get('id')
-    console.log('id', id)
 
     useEffect(() => {
         if (id) {
@@ -39,6 +38,7 @@ const BookForm = () => {
 
     return (
         <div>
+            <h2 className='text-xl mb-4'>{id ? 'Edit existing' : 'Add new'} book</h2>
             <Form
                 {...(id ? { initialState: getInitialState() } : {})}
                 {...(book ? { book } : {})}
