@@ -6,7 +6,7 @@ interface TableColumn {
     render?: (row: any) => React.ReactNode;
 }
 
-interface TableProps {
+export interface TableProps {
     data: Record<string, any>[];
     columns: TableColumn[]
 }
