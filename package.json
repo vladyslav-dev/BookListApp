@@ -4,8 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite & json-server ./server/db.json --port 8080",
+    "serve:api": "json-server ./server/db.json --port 8080",
+    "dev": "vite & npm run serve:api",
     "build": "tsc -b && vite build",
+    "start": "npm run serve:api & npm run preview",
     "lint": "eslint .",
     "preview": "vite preview"
   },
