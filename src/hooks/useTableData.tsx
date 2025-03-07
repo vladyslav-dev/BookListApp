@@ -5,6 +5,7 @@ import { Book, BookFilterOptions, BookStatus, TableColumnsEnum } from '@/types/b
 import { deactivateBook, deleteBook, getAllBooks, getBookById, getBooksByStatus, reactivateBook } from '@/services/books'
 import { formatDate } from '@/types/date'
 import { TableProps } from '@/components/ui/Table'
+import { useToast } from '@/hooks/useToast'
 
 interface ITableData {
     books: Book[]
@@ -15,6 +16,7 @@ interface ITableData {
 
 const useTableData = (): ITableData => {
     const navigate = useNavigate();
+    const { showToast } = useToast()
     const [books, setBooks] = useState<Book[]>([])
     const [activeFilter, setActiveFilter] = useState<BookFilterOptions>(BookFilterOptions.ACTIVE)
 
@@ -64,6 +66,8 @@ const useTableData = (): ITableData => {
         try {
             await deleteBook(id)
             updateBookListAfterDelete(id)
+
+            showToast('Book deleted successfully', 'success')
         } catch (error) {
             console.error('Failed to delete book:', error)
         }
