@@ -1,7 +1,7 @@
 # BookList App
 
 ## Description
-This project is a web application built with Vite and JSON Server. It allows users to interact with a simulated backend for development and testing purposes.
+CRUD react application within a REST architecture. App has only two separate pages: Dashboard, Add a Book(Edit Book)
 
 ## Prerequisites
 Make sure you have the following installed on your machine:
