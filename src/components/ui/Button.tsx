@@ -21,7 +21,7 @@ const Button: FC<PropsWithChildren<ButtonProps>> = ({
   };
 
   const disabledStyles = disabled
-    ? 'opacity-50 cursor-not-allowed' // Apply these styles when the button is disabled
+    ? 'opacity-50 cursor-not-allowed'
     : 'cursor-pointer';
 
   const buttonStyles = `${baseStyles} ${variantStyles[variant]}`;
