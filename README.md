@@ -1,54 +1,46 @@
-# React + TypeScript + Vite
+# BookList App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+This project is a web application built with Vite and JSON Server. It allows users to interact with a simulated backend for development and testing purposes.
 
-Currently, two official plugins are available:
+## Prerequisites
+Make sure you have the following installed on your machine:
+- **Node.js** (>= 20)
+- **npm** (comes with Node.js)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+1. **Clone the repository:**
+   ```sh
+   git clone <repository-url>
+   cd <project-directory>
+   ```
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
 
-## Expanding the ESLint configuration
+## Available Scripts
+The following scripts are available to manage the project:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Start the Development Server
+```sh
+npm run dev
 ```
+This will start the Vite development server and JSON Server on port `8080`.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### Build the Project
+```sh
+npm run build
 ```
+This compiles the TypeScript files and builds the application for production.
+
+### Serve the Built Application
+```sh
+npm run start
+```
+This command starts the JSON Server and serves the built application using Vite's preview mode.
+
+## JSON Server API
+The JSON Server is used as a mock backend and runs on `http://localhost:8080/`. The database file is located at `server/db.json`. You can modify this file to change the mock data.
+
+## Demo pages
